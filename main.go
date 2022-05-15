@@ -16,6 +16,12 @@ func main() {
 		})
 	})
 
+	r.GET("/hc", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "healthcheck.tmpl", gin.H{
+			"title": "HC-Site",
+		})
+	})
+
 	r.GET("/health", func(c *gin.Context) {
 		c.JSON(200, gin.H{"status": "UP"})
 	})
