@@ -1,4 +1,0 @@
-6e59bbd93b4b5a5358472c50dbc97bb21a85b8adacf56ea27a77d8cd62acc533  webapp-gin_0.0.3_darwin_arm64.tar.gz
-87698e514ec7fcbf3e88af0fd02992c1f70a1094d3776b4b6ca774b6d05ee62b  webapp-gin_0.0.3_linux_arm64.tar.gz
-997fe32b2561d531504194f814486d76866d658385f9e4b187f60e23cfc2a7a4  webapp-gin_0.0.3_darwin_amd64.tar.gz
-f63a242053503cc37534b0cc917fa54c50d46ed5b89789e8b0dbcb7818fb975e  webapp-gin_0.0.3_linux_amd64.tar.gz
