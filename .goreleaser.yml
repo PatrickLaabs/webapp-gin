@@ -20,6 +20,8 @@ dockers:
   - --label=org.opencontainers.image.created={{ time "2006-01-02T15:04:05Z07:00" }}
   - --label=org.opencontainers.image.revision={{ .FullCommit }}
   - --label=org.opencontainers.image.licenses=MIT
+  extra_files:
+    - templates
 - image_templates: ["ghcr.io/patricklaabs/{{ .ProjectName }}:{{ .Version }}-arm64v8"]
   goarch: arm64
   dockerfile: Dockerfile
@@ -35,12 +37,7 @@ dockers:
   - --label=org.opencontainers.image.revision={{ .FullCommit }}
   - --label=org.opencontainers.image.licenses=MIT
   extra_files:
-    - templates/footer.tmpl
-    - templates/header.tmpl
-    - templates/healthcheck.tmpl
-    - templates/index.tmpl
-    - templates/menu.tmpl
-    - templates/tables.tmpl
+    - templates
 docker_manifests:
 - name_template: ghcr.io/patricklaabs/{{ .ProjectName }}:{{ .Version }}
   image_templates:
