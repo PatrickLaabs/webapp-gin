@@ -1,4 +1,4 @@
-FROM alpine
+FROM golang:alpine
 EXPOSE 9090
 COPY webapp-gin .
 COPY . .
