@@ -1,5 +1,5 @@
-FROM golang:alpine
+FROM scratch
 EXPOSE 9090
-COPY webapp-gin .
-COPY . .
-ENTRYPOINT ["./webapp-gin"]
+COPY webapp-gin /
+COPY . /
+ENTRYPOINT ["/webapp-gin"]
