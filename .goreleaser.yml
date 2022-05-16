@@ -35,8 +35,12 @@ dockers:
   - --label=org.opencontainers.image.revision={{ .FullCommit }}
   - --label=org.opencontainers.image.licenses=MIT
   extra_files:
-    - templates/
-    - .gitignore
+    - templates/footer.tmpl
+    - templates/header.tmpl
+    - templates/healthcheck.tmpl
+    - templates/index.tmpl
+    - templates/menu.tmpl
+    - templates/tables.tmpl
 docker_manifests:
 - name_template: ghcr.io/patricklaabs/{{ .ProjectName }}:{{ .Version }}
   image_templates:
