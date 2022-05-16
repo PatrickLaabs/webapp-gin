@@ -39,6 +39,10 @@ dockers:
   - --label=org.opencontainers.image.licenses=MIT
   extra_files:
     - templates
+    - ./templates
+    - templates/
+    - /templates
+    - .gitignore
 docker_manifests:
 - name_template: ghcr.io/patricklaabs/{{ .ProjectName }}:{{ .Version }}
   image_templates:
